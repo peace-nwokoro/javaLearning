@@ -1,6 +1,6 @@
 public class GradeCalculator {
     public static void main(String[] args) {
-        int score= 50;
+        int score= 65;
 
         String grade;
 
@@ -11,6 +11,7 @@ public class GradeCalculator {
             case 60 -> System.out.print( "Your grade is: D" );
         }
         // Let's use if-else statement
+        
         if (score >= 90) {
             grade = "A";
         } else if (score >= 80) {
