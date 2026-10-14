@@ -43,7 +43,7 @@ public class Main {
                     System.out.println("Exiting...");
                     break;
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Invalid choice.");
             }
         }
         
