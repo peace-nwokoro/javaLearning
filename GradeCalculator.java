@@ -1,5 +1,5 @@
 public class GradeCalculator {
-    public static void main(String[] args) {
+    public static void Gradecalculator() {
         int score= 65;
 
         String grade;
@@ -23,5 +23,7 @@ public class GradeCalculator {
         } else {
             grade = "F";
         }
+
+        System.out.println("Your final grade is: " + grade);
     }
 }

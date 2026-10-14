@@ -1,18 +1,18 @@
 public class Number {
-    public static void main(String[] args) {
+    public static void EvenorOdd() {
 
         int number = 405;
-        //if(number % 2 ==0) {
-           // System.out.println("The number is even");
-       // } else {
-           // System.out.println("The number is odd");
-      //  }
- 
-      // Let's use the ternary operator
+        // if(number % 2 ==0) {
+        // System.out.println("The number is even");
+        // } else {
+        // System.out.println("The number is odd");
+        // }
 
-      String EVENorODD = (number % 2 ==0) ? "EVEN" : "ODD";
+        // Let's use the ternary operator
 
-System.out.println("The number is " + EVENorODD);
+        String EVENorODD = (number % 2 == 0) ? "EVEN" : "ODD";
 
-}
+        System.out.println("The number is " + EVENorODD);
+
+    }
 }
