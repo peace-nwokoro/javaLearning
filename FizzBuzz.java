@@ -1,23 +1,27 @@
+import java.util.Scanner;
+
 public class FizzBuzz {
-    public static void fizzBuzz() {
+    public void Run(Scanner scanner) {
 
-        for (int number = 1; number <= 100; number++) {
+        int number;
+        System.out.print("Enter a number to check if it is Fizz, Buzz, or FizzBuzz: ");
+        number = scanner.nextInt();
 
-            if (number % 3 == 0 && number % 5 == 0) {
-                System.out.println(number + " FizzBuzz");
-            }
-
-            else if (number % 3 == 0) {
-                System.out.println(number + " Fizz");
-            }
-
-            else if (number % 5 == 0) {
-                System.out.println(number + " Buzz");
-            }
-
-            else {
-                System.out.println(number);
-            }
+        if (number % 3 == 0 && number % 5 == 0) {
+            System.out.println(number + " FizzBuzz");
         }
+
+        else if (number % 3 == 0) {
+            System.out.println(number + " Fizz");
+        }
+
+        else if (number % 5 == 0) {
+            System.out.println(number + " Buzz");
+        }
+
+        else {
+            System.out.println(number);
+        }
+
     }
 }

@@ -1,17 +1,22 @@
+import java.util.Scanner;
+
 public class GradeCalculator {
-    public static void Gradecalculator() {
-        int score= 65;
+    public void Run(Scanner scanner) {
+        int score;
 
         String grade;
 
+        System.out.print("Kindly enter your score ");
+        score = scanner.nextInt();
+
         switch (score) {
-            case 90 -> System.out.print( "Your grade is: A" );
-            case 80 -> System.out.print( "Your grade is: B" );
-            case 70 -> System.out.print( "Your grade is: C" );
-            case 60 -> System.out.print( "Your grade is: D" );
+            case 90 -> System.out.print("Your grade is: A");
+            case 80 -> System.out.print("Your grade is: B");
+            case 70 -> System.out.print("Your grade is: C");
+            case 60 -> System.out.print("Your grade is: D");
         }
         // Let's use if-else statement
-        
+
         if (score >= 90) {
             grade = "A";
         } else if (score >= 80) {
@@ -25,5 +30,6 @@ public class GradeCalculator {
         }
 
         System.out.println("Your final grade is: " + grade);
+
     }
 }

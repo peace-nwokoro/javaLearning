@@ -1,5 +1,5 @@
 public class Number {
-    public static void EvenorOdd() {
+    public void Run() {
 
         int number = 405;
         // if(number % 2 ==0) {
