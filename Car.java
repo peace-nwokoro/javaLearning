@@ -7,28 +7,36 @@ public class Car {
     int year;
 
     public void Run(Scanner scanner) {
-        Car mycar = new Car();
+        while (true) {
+            Car mycar = new Car();
 
-        System.out.print("Enter the brand of the car: ");
-        mycar.brand = scanner.nextLine();
+            System.out.print("Enter the brand of the car: ");
+            mycar.brand = scanner.nextLine();
 
-        System.out.print("Enter the model of the car: ");
-        mycar.model = scanner.nextLine();
+            System.out.print("Enter the model of the car: ");
+            mycar.model = scanner.nextLine();
 
-        System.out.print("Enter the color of the car: ");
-        mycar.color = scanner.nextLine();
+            System.out.print("Enter the color of the car: ");
+            mycar.color = scanner.nextLine();
 
-        System.out.print("Enter the year of the car: ");
-        mycar.year = scanner.nextInt();
+            System.out.print("Enter the year of the car: ");
+            mycar.year = scanner.nextInt();
+            scanner.nextLine();
 
-        System.out.println(
-                "You are driving a " + mycar.year + " " + mycar.color + " " + mycar.brand + " " + mycar.model);
+            System.out.println(
+                    "You are driving a " + mycar.year + " " + mycar.color + " " + mycar.brand + " " + mycar.model);
 
-        mycar.drive();
-
+            mycar.parked();
+            System.out.print("Do you want to enter another car? (yes/no): ");
+            String response = scanner.nextLine();
+            if (!response.equalsIgnoreCase("yes")) {
+                System.out.println("Exiting Car Program...");
+                break;
+            }
+        }
     }
 
-    public void drive() {
-        System.out.println("The car is driving");
+    public void parked() {
+        System.out.println("The car is parked");
     }
 }

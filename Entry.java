@@ -43,7 +43,7 @@ public class Entry {
                     }
                     case 5 -> {
                         Number number = new Number();
-                        number.Run();
+                        number.Run(scanner);
                     }
                     case 6 -> System.out.println("Exiting...");
                     default -> System.out.println("Invalid choiceee.");

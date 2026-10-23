@@ -1,18 +1,24 @@
+import java.util.Scanner;
+
 public class Number {
-    public void Run() {
+    public void Run(Scanner scanner) {
+        while (true) {
 
-        int number = 405;
-        // if(number % 2 ==0) {
-        // System.out.println("The number is even");
-        // } else {
-        // System.out.println("The number is odd");
-        // }
+            System.out.println("Enter a number to check if it is even or odd (0 to exit): ");
+            int number = scanner.nextInt();
 
-        // Let's use the ternary operator
+            if (number == 0) {
+                System.out.println("Exiting Even/Odd Number Program...");
+                return;
+            }
 
-        String EVENorODD = (number % 2 == 0) ? "EVEN" : "ODD";
+            if (number % 2 == 0) {
+                System.out.println("The number is even");
+            } else {
+                System.out.println("The number is odd");
+            }
 
-        System.out.println("The number is " + EVENorODD);
+        }
 
     }
 }
